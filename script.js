@@ -87,4 +87,14 @@ class store {
       0
     );
   }
+
+  // create a method that find product by name
+
+  findProductName(name) {
+    return (
+      this.inventory.find(
+        (product) => product.name.toLowerCase() === name.toLowerCase()
+      ) || null
+    );
+  }
 }
