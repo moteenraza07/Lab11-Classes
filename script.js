@@ -21,3 +21,14 @@ const orange = new ProductProperties("Orange", 4, 3);
 
 console.log(orange.toString());
 console.log("The total value is: $", orange.getTotalValue());
+
+// Step 2 Adding inheretince
+
+// subclass
+
+class PerishableProductProperties extends ProductProperties {
+  constructor(name, price, quantity, expirationDate) {
+    super(name, price, quantity);
+    this.expirationDate = expirationDate;
+  }
+}
