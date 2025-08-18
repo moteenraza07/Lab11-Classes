@@ -12,4 +12,7 @@ class ProductProperties {
   }
 
   // A to string method to return a string representation
+  toString() {
+    return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
+  }
 }
