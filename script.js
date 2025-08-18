@@ -72,4 +72,10 @@ class store {
   constructor() {
     this.inventory = [];
   }
+
+  // add a product to the inventory method
+
+  addProduct(product) {
+    this.inventory.push(product);
+  }
 }
