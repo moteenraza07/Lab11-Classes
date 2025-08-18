@@ -54,3 +54,10 @@ console.log("The total value is: $" + milk.getTotalValue());
 
 console.log(yogurt.toString());
 console.log("The total value is: $" + yogurt.getTotalValue());
+
+// create an array of products
+
+const products = [milk, yogurt, orange];
+
+// applying a %30 discount
+ProductProperties.applyDiscount(products, 0.3);
