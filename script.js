@@ -13,6 +13,11 @@ class ProductProperties {
 
   // A to string method to return a string representation
   toString() {
-    return `Product: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`;
+    return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
   }
 }
+
+const basketball = new ProductProperties("basketball", 20, 3);
+
+console.log(basketball.toString());
+console.log("The total value is: $", basketball.getTotalValue());
