@@ -109,3 +109,8 @@ store.addProduct(orange);
 
 console.log("Here is the inventory: ");
 store.inventory.forEach((product) => console.log(product.toString()));
+
+// inventory value
+console.log(
+  "The total inventory value is: " + store.getInventoryValue().toFixed(2)
+);
