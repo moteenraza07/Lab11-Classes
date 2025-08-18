@@ -68,7 +68,7 @@ products.forEach((price) => console.log(price.toString()));
 
 // Step 4: Store class
 
-class store {
+class Store {
   constructor() {
     this.inventory = [];
   }
@@ -101,8 +101,11 @@ class store {
 
 // example with store classs
 
-const store = new store();
+const store = new Store();
 
 store.addProduct(milk);
 store.addProduct(yogurt);
 store.addProduct(orange);
+
+console.log("Here is the inventory: ");
+store.inventory.forEach((product) => console.log(product.toString()));
