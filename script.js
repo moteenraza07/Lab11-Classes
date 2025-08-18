@@ -17,7 +17,7 @@ class ProductProperties {
   }
 }
 
-const basketball = new ProductProperties("basketball", 20, 3);
+const orange = new ProductProperties("Orange", 4, 3);
 
-console.log(basketball.toString());
-console.log("The total value is: $", basketball.getTotalValue());
+console.log(orange.toString());
+console.log("The total value is: $", orange.getTotalValue());
