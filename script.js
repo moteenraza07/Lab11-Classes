@@ -98,3 +98,11 @@ class store {
     );
   }
 }
+
+// example with store classs
+
+const store = new store();
+
+store.addProduct(milk);
+store.addProduct(yogurt);
+store.addProduct(orange);
