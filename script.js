@@ -65,3 +65,11 @@ ProductProperties.applyDiscount(products, 0.3);
 
 console.log("Price after the 30% discount: ");
 products.forEach((price) => console.log(price.toString()));
+
+// Step 4: Store class
+
+class store {
+  constructor() {
+    this.inventory = [];
+  }
+}
