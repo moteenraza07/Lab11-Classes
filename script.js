@@ -19,7 +19,8 @@ class ProductProperties {
   // Step 3 adding static method to apply a discount
   static applyDiscount(products, discount) {
     products.forEach((product) => {
-      product.price = product.price - product.price * discount;
+      let newPrice = product.price - product.price * discount;
+      product.price = parseFloat(newPrice.toFixed(2));
     });
   }
 }
@@ -61,3 +62,6 @@ const products = [milk, yogurt, orange];
 
 // applying a %30 discount
 ProductProperties.applyDiscount(products, 0.3);
+
+console.log("Price after the 30% discount: ");
+products.forEach((price) => console.log(price.toString()));
