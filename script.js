@@ -15,6 +15,13 @@ class ProductProperties {
   toString() {
     return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
   }
+
+  // Step 3 adding static method to apply a discount
+  static applyDiscount(products, discount) {
+    products.forEach((product) => {
+      product.price = product.price - product.price * discount;
+    });
+  }
 }
 
 const orange = new ProductProperties("Orange", 4, 3);
