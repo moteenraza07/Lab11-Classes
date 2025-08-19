@@ -144,3 +144,9 @@ ProductProperties.applyDiscount(store.inventory, 0.15);
 console.log(
   "New price with 15% discount: " + store.getInventoryValue().toFixed(2)
 );
+
+// find and print product by name
+
+console.log(
+  store.findProductName("bread")?.toString() || "product was not found"
+);
