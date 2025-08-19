@@ -112,5 +112,16 @@ store.inventory.forEach((product) => console.log(product.toString()));
 
 // inventory value
 console.log(
-  "The total inventory value is: " + store.getInventoryValue().toFixed(2)
+  "The total inventory value is: $" + store.getInventoryValue().toFixed(2)
+);
+
+// fine product by name
+console.log(
+  store.findProductName("milk")?.toString() || "product was not found"
+);
+
+// check with product not found
+
+console.log(
+  store.findProductName("mango")?.toString() || "product was not found"
 );
