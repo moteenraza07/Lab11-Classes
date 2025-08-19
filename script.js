@@ -48,6 +48,10 @@ class PerishableProductProperties extends ProductProperties {
 //example for milk and yogurt
 const milk = new PerishableProductProperties("milk", 1.5, 10, "2025-08-22");
 const yogurt = new PerishableProductProperties("Yogurt", 4.5, 2, "2025-08-30");
+const bread = new PerishableProductProperties("Bread", 3, 4, "2025-09-05");
+const grapes = new PerishableProductProperties("Grapes", 2.5, 1, "2025-08-19");
+const rice = new PerishableProductProperties("Rice", 25, 2, "2025-10-15");
+const eggs = new PerishableProductProperties("Eggs", 14, 1, "2025-08-29");
 
 //console log milk output
 console.log(milk.toString());
@@ -106,6 +110,10 @@ const store = new Store();
 store.addProduct(milk);
 store.addProduct(yogurt);
 store.addProduct(orange);
+store.addProduct(grapes);
+store.addProduct(eggs);
+store.addProduct(bread);
+store.addProduct(rice);
 
 console.log("Here is the inventory: ");
 store.inventory.forEach((product) => console.log(product.toString()));
