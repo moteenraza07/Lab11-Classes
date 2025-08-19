@@ -49,8 +49,8 @@ class PerishableProductProperties extends ProductProperties {
 const milk = new PerishableProductProperties("milk", 1.5, 10, "2025-08-22");
 const yogurt = new PerishableProductProperties("Yogurt", 4.5, 2, "2025-08-30");
 const bread = new PerishableProductProperties("Bread", 3, 4, "2025-09-05");
-const grapes = new PerishableProductProperties("Grapes", 2.5, 1, "2025-08-19");
-const rice = new PerishableProductProperties("Rice", 25, 2, "2025-10-15");
+const grapes = new PerishableProductProperties("Grapes", 2.5, 1);
+const rice = new PerishableProductProperties("Rice", 25, 2);
 const eggs = new PerishableProductProperties("Eggs", 14, 1, "2025-08-29");
 
 //console log milk output
@@ -132,4 +132,15 @@ console.log(
 
 console.log(
   store.findProductName("mango")?.toString() || "product was not found"
+);
+
+// step 5 console log new products with 15% discount
+console.log(
+  "The new inventory value is: $ " + store.getInventoryValue().toFixed(2)
+);
+
+// apply 15% discount
+ProductProperties.applyDiscount(store.inventory, 0.15);
+console.log(
+  "New price with 15% discount: " + store.getInventoryValue().toFixed(2)
 );
